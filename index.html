@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>CandyLink69 – Official Site</title>
   
-  <!-- Same favicon links (as before) -->
+  <!-- Same favicon links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   
   <style>
-    /* ===== SAME BASE THEME ===== */
     * {
       margin: 0;
       padding: 0;
@@ -28,15 +27,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
+      padding: 16px;
     }
 
-    /* 🔥 Flaming Wrapper (same as old index) */
+    /* Flaming Wrapper (same style) */
     .wrapper {
-      max-width: 700px;
+      max-width: 650px;
       width: 100%;
       margin: 20px auto;
-      padding: 30px 25px;
+      padding: 24px 20px;
       border-radius: 20px;
       border: 3px solid transparent;
       background: linear-gradient(#0b0b0b, #0b0b0b) padding-box,
@@ -50,19 +49,18 @@
       100% { filter: hue-rotate(360deg); }
     }
 
-    /* 🔥 Blinking Title (same style) */
+    /* Blinking Title */
     .title {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: bold;
-      margin-bottom: 30px;
-      padding: 15px;
+      margin-bottom: 25px;
+      padding: 12px 20px;
       border-radius: 14px;
       background: rgba(0,0,0,0.6);
       border: 3px solid;
       text-shadow: 0 0 12px currentColor;
       animation: blinkColors 2s infinite alternate, pulseLight 1.5s infinite alternate;
       display: inline-block;
-      width: auto;
     }
 
     @keyframes blinkColors {
@@ -81,102 +79,137 @@
       100% { opacity: 1; }
     }
 
-    /* Message styling */
+    /* Professional English Message */
     .thankyou-message {
-      font-size: 22px;
-      font-weight: bold;
-      background: rgba(255,51,0,0.15);
-      padding: 20px 15px;
+      font-size: 20px;
+      font-weight: 600;
+      background: rgba(255,51,0,0.12);
+      padding: 18px 12px;
       border-radius: 18px;
-      margin: 20px 0 25px;
-      line-height: 1.4;
-      backdrop-filter: blur(2px);
+      margin: 15px 0 20px;
+      line-height: 1.45;
     }
 
     .permanent-text {
       font-size: 18px;
       color: #ffcc88;
-      margin-bottom: 20px;
-      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+      font-weight: 500;
     }
 
-    /* 3D BUTTON (Animated, hover effect) */
+    /* Click Here label */
+    .click-label {
+      font-size: 16px;
+      color: #ffaa66;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    /* 3D BUTTON - Smaller & mobile-friendly */
     .btn-3d {
       display: inline-block;
       background: linear-gradient(145deg, #ff3300, #cc2200);
       color: white;
-      font-size: 28px;
+      font-size: 22px;
       font-weight: bold;
-      padding: 18px 40px;
-      border-radius: 60px;
+      padding: 12px 28px;
+      border-radius: 50px;
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      box-shadow: 0 12px 0 #7a1f00, 0 5px 15px rgba(0,0,0,0.4);
+      letter-spacing: 2px;
+      box-shadow: 0 8px 0 #7a1f00, 0 4px 12px rgba(0,0,0,0.4);
       transition: all 0.1s ease;
-      margin: 15px 0 10px;
+      margin: 8px 0;
       border: none;
       cursor: pointer;
     }
 
     .btn-3d:hover {
-      transform: translateY(4px);
-      box-shadow: 0 8px 0 #7a1f00, 0 8px 20px rgba(0,0,0,0.5);
-      background: linear-gradient(145deg, #ff4411, #dd2a00);
+      transform: translateY(3px);
+      box-shadow: 0 5px 0 #7a1f00, 0 6px 16px rgba(0,0,0,0.5);
     }
 
     .btn-3d:active {
-      transform: translateY(12px);
+      transform: translateY(8px);
       box-shadow: 0 2px 0 #7a1f00;
     }
 
-    /* Timer info (small, not intrusive) */
     .timer-note {
-      margin-top: 30px;
+      margin-top: 25px;
       font-size: 14px;
       color: #aaa;
       background: rgba(0,0,0,0.5);
       display: inline-block;
-      padding: 6px 14px;
+      padding: 5px 14px;
       border-radius: 40px;
     }
 
-    /* No ads, no categories, no videos – clean */
-    .footer-space {
-      height: 20px;
+    /* Responsive for small screens */
+    @media (max-width: 550px) {
+      .wrapper {
+        padding: 20px 16px;
+      }
+      .title {
+        font-size: 22px;
+        padding: 10px 16px;
+      }
+      .thankyou-message {
+        font-size: 18px;
+        padding: 15px 10px;
+      }
+      .btn-3d {
+        font-size: 18px;
+        padding: 10px 22px;
+        letter-spacing: 1.5px;
+      }
+      .permanent-text {
+        font-size: 16px;
+      }
+      .click-label {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .btn-3d {
+        font-size: 16px;
+        padding: 8px 18px;
+      }
     }
   </style>
 </head>
 <body>
 
 <div class="wrapper">
-  <!-- Same Blinking Header / Logo -->
+  <!-- Blinking Header -->
   <div class="title">🔥 CandyLink69 🔥</div>
 
-  <!-- Thank You Message -->
+  <!-- Professional English Message -->
   <div class="thankyou-message">
-    🎉 Hume support karne ke liye aapka bahut-bahut dhanyavad! 🎉<br>
-    humari website ab ek professional website ban chuki hai. 🎉
+    🎉 Thank you so much for your support! 🎉<br>
+    Our website has now evolved into a professional platform. 🎉
   </div>
 
   <div class="permanent-text">
     ⭐ Our New Official Permanent Link is below: ⭐
   </div>
 
-  <!-- 3D Animated Button (Link to new domain) -->
+  <!-- 👇🏻 Click Here label above button -->
+  <div class="click-label">👇🏻 Click Here</div>
+
+  <!-- 3D Animated Button (smaller, fits all devices) -->
   <a href="https://candylink69.com" class="btn-3d" id="redirectBtn">
     CANDYLINK69.COM
   </a>
 
   <div class="timer-note" id="timerNote">
-    Redirecting in 10 seconds...
+    Redirecting in 30 seconds...
   </div>
-  <div class="footer-space"></div>
 </div>
 
 <script>
-  // Auto-redirect after 10 seconds (invisible timer)
-  let secondsLeft = 10;
+  // 30 seconds auto-redirect
+  let secondsLeft = 30;
   const timerElement = document.getElementById('timerNote');
   let countdownInterval;
 
@@ -191,14 +224,12 @@
     secondsLeft--;
   }
 
-  // Start countdown
   countdownInterval = setInterval(updateTimer, 1000);
-  updateTimer(); // immediate first update
+  updateTimer();
 
-  // If user clicks the button, cancel redirect (optional, but we just let it go)
+  // If user clicks the button, we can optionally clear timer (not necessary, but good)
   const btn = document.getElementById('redirectBtn');
-  btn.addEventListener('click', function(e) {
-    // No need to cancel timer; user is already leaving
+  btn.addEventListener('click', function() {
     clearInterval(countdownInterval);
   });
 </script>
